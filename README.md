@@ -37,13 +37,8 @@ A simple and functional console-based Library Management System built using **Co
 ## 🖥️ How to Run
 
 1. **Compile** the program:
-   ```bash
    javac LibraryManagementSystem.java
 Run the program:
-
-bash
-Copy
-Edit
 java LibraryManagementSystem
 Follow the on-screen menu to manage books in the library.
 
