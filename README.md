@@ -38,21 +38,18 @@ A simple and functional console-based Library Management System built using **Co
 
 1. **Compile** the program:
    javac LibraryManagementSystem.java
+
 Run the program:
 java LibraryManagementSystem
+
 Follow the on-screen menu to manage books in the library.
 
 📂 Project Structure
-pgsql
-Copy
-Edit
 LibraryManagementSystem/
 ├── LibraryManagementSystem.java
 ├── books.dat (auto-generated for data storage)
+
 📌 Sample Menu
-markdown
-Copy
-Edit
 ===== Library Menu =====
 1. Add Book
 2. View Books
