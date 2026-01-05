@@ -36,18 +36,26 @@ A simple and functional console-based Library Management System built using **Co
 
 ## 🖥️ How to Run
 
-1. **Compile** the program:
-   javac LibraryManagementSystem.java
+**Compile** the program:
+javac Main.java
 
 Run the program:
-java LibraryManagementSystem
+java Main
 
 Follow the on-screen menu to manage books in the library.
 
 📂 Project Structure
+
+```
 LibraryManagementSystem/
-├── LibraryManagementSystem.java
-├── books.dat (auto-generated for data storage)
+├── src/
+│   ├── model/
+│   │   └── Book.java
+│   ├── service/
+│   │   └── LibraryManagementSystem.java
+│   └── Main.java
+└── README.md
+```
 
 📌 Sample Menu
 ===== Library Menu =====
@@ -56,14 +64,15 @@ LibraryManagementSystem/
 3. Issue Book
 4. Return Book
 5. Save & Exit
+
 Enter your choice:
+
 ✅ Status
+
 ✅ Project Completed
+
 🔄 Future Scope: GUI using Java Swing or JavaFX
 
 ## 👤 Author
 
 **Krantikumar Patil**  
-📧 krantikumar4211@gmail.com  
-🔗 [View My GitHub Profile](https://github.com/Krantikumar4211)  
-🔗 [Connect on LinkedIn](https://www.linkedin.com/in/krantikumarpatil4211/)
