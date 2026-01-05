@@ -1,47 +1,22 @@
-package Model;
+package model;
 
-public class Book {
+import java.io.Serializable;
 
-    int id;
-    String title;
-    String Author;
-    boolean isIssued;
+public class Book implements Serializable {
+    private int id;
+    private String title;
+    private String author;
+    private boolean isIssued;
 
-    public Book() {
-
-    }
-    public Book(int id, String title, String author, boolean isIssued) {
+    public Book(int id, String title, String author) {
         this.id = id;
         this.title = title;
-        this.Author = author;
-        this.isIssued = isIssued;
-    }
-
-    public Book(int id, String title, String Author) {
+        this.author = author;
+        this.isIssued = false;
     }
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getAuthor() {
-        return Author;
-    }
-
-    public void setAuthor(String author) {
-        Author = author;
     }
 
     public boolean isIssued() {
@@ -54,11 +29,8 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", Author='" + Author + '\'' +
-                ", isIssued=" + isIssued +
-                '}';
+        return id + " | " + title + " | " + author + " | " +
+               (isIssued ? "Issued" : "Available");
     }
 }
+
